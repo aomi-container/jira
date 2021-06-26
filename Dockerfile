@@ -17,6 +17,6 @@ COPY --from=builder app /app
 RUN mkdir ${JIRA_HOME}
 
 VOLUME [ "${JIRA_HOME}" ]
-WORKDIR ${JIRA_HOME}}
+WORKDIR ${JIRA_HOME}
 
 CMD [ "/app/bin/start-jira.sh", "run"]
